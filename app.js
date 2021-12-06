@@ -24,7 +24,7 @@ var host = require('./routes/hosting');
 var admin = require('./routes/admin');
 var app = express();
 
-mongoose.connect('mongodb://doadmin:show-password@db-mongodb-nyc3-88593-1c7c030c.mongo.ondigitalocean.com:27017/admin?authSource=admin')
+mongoose.createConnection('mongodb://doadmin:show-password@db-mongodb-nyc3-88593-1c7c030c.mongo.ondigitalocean.com:27017/admin?authSource=admin')
 require('./config/passport');
 
 
